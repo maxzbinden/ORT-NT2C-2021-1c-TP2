@@ -11,6 +11,24 @@
             }
             )
 
+            let miFuncion = function(unArrayDeNombres){
+                let nuevoArray = unArrayDeNombres.map(
+                    function(nombreDeLaLista){
+                        let objeto = {
+                            nombre: nombreDeLaLista,
+                            longitud: nombreDeLaLista.length,
+                    
+                        };
+                        return objeto;
+                    } 
+                )
+                return nuevoArray;
+            }
+            
+            let arrayDeNombres2 = miFuncion(nombres);
+            console.log(JSON.stringify(arrayDeNombres2));
+
+
         </script>
     </body>
 </html>
